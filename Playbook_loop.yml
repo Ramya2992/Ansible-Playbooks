@@ -1,0 +1,13 @@
+--- # this is my first playbook
+- hosts: all
+  user: ansadmin
+  become: true
+  connection: ssh
+  gather_facts: no
+  tasks:
+   - name: Install {{ item }} software on host systems
+     yum: pkg={{ item }} state=installed
+     loop:
+       - httpd
+       - git
+
