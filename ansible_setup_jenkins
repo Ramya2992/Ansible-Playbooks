@@ -1,0 +1,20 @@
+Ansible server:
+1.install Java-1.8
+2.goto /home/ansadmin/.ssh
+3. cat id_rsa.pub > authorized_keys
+4.chmod 700 authorized_keys
+
+
+Jenkins Master:
+
+
+
+
+cd /var/lib/jenkins/.ssh
+
+ssh-keyscan -H <ansible private IP address> >>/var/lib/jenkins/.ssh/known_hosts
+
+
+ex:
+
+ssh-keyscan -H 10.20.40.1 >>/var/lib/jenkins/.ssh/known_hosts
