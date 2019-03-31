@@ -11,7 +11,9 @@ git 'https://github.com/Ramya2992/Ansible-Playbooks.git'
    
    ansible --version
    
-   ansible-playbook /home/ansadmin/Playbooks/Ansible-Playbooks/myfirstplaybook.yml
+   #ansible-playbook /home/ansadmin/Playbooks/Ansible-Playbooks/myfirstplaybook.yml
+   
+   ansible-playbook /home/ansadmin/workspace/Job_DevOps/Ansible_version_job/uninstall_git_httpd.yml
 
    
    
