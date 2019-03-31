@@ -2,8 +2,21 @@
 node('ansible_node') {
 
 stage('SCM checkout') {
-git '
+git 'https://github.com/Ramya2992/Ansible-Playbooks.git'
 }
+  
+  stage('Run Playbook') {
+    
+   sh  '''
+   
+   ansible --version
+   
+   
+   
+   
+   '''
+    
+  }
 
 
 
