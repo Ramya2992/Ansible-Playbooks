@@ -11,6 +11,9 @@ git 'https://github.com/Ramya2992/Ansible-Playbooks.git'
    
    ansible --version
    
+   ansible-playbook /home/ansadmin/Playbooks/Ansible-Playbooks/myfirstplaybook.yml
+
+   
    
    
    
